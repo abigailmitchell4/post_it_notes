@@ -1,6 +1,7 @@
 <h1><%= @note.title %></h1>
 <br/>
 <p> <%= @note.task %></p>
+<br/>
 <%= link_to "Edit", edit_note_path(@note.id) %>
 <%= link_to "Delete", note_path(@note.id), method: :delete %>
 <%= link_to "Back", notes_path %>
