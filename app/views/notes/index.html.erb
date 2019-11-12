@@ -1,0 +1,8 @@
+<h1> Post It Note App </h1>
+<br/>
+<button><%= link_to "New Note", new_note_path %></button>
+<ul>
+<% @notes.each do |note| %>
+  <li><%= link_to note.title, note_path(note.id)%></li>
+<% end %>
+<ul>

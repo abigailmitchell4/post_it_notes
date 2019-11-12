@@ -1,0 +1,11 @@
+<h1>Edit '<%= @note.title %>' Note</h1>
+<%= form_for @note do |t| %>
+  <%= t.label :title %>
+  <%= t.text_field :title %>
+  <br/>
+  <%= t.label :task %>
+  <%= t.text_field :task %>
+  <br/>
+  <br/>
+  <%= t.submit %>
+<% end %>
